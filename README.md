@@ -173,7 +173,7 @@ Platform e-commerce lengkap yang dibangun dengan CodeIgniter 4, dilengkapi denga
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/e-commerce.git
+git clone https://github.com/Lapadde/E-Commerce-Website
 cd e-commerce
 ```
 
@@ -483,15 +483,6 @@ php spark migrate:refresh --seed
 - Midtrans SDK mungkin tidak memiliki class Exception khusus
 - Gunakan `\Exception` dengan pengecekan error message
 
-## 🤝 Kontribusi
-
-Kontribusi sangat diterima! Silakan:
-
-1. Fork repository
-2. Buat feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
-5. Buat Pull Request
 
 ## 📝 Lisensi
 
@@ -499,7 +490,8 @@ Project ini menggunakan lisensi MIT. Lihat file `LICENSE` untuk detail lebih lan
 
 ## 👤 Author
 
-- **Your Name** - [GitHub](https://github.com/username)
+- **Tpk** - [GitHub](https://github.com/Lapadde)
+- **Me On Insta** - [Instagram](https://instagram.com/taaufiik25)
 
 ## 🙏 Acknowledgments
 
