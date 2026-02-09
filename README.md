@@ -14,7 +14,6 @@ Platform e-commerce lengkap yang dibangun dengan CodeIgniter 4, dilengkapi denga
 - [Role dan Akses](#-role-dan-akses)
 - [Database Migration](#-database-migration)
 - [Troubleshooting](#-troubleshooting)
-- [Kontribusi](#-kontribusi)
 - [Lisensi](#-lisensi)
 
 ## ✨ Fitur Utama
