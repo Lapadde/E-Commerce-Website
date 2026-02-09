@@ -1,0 +1,51 @@
+ERROR - 2026-02-07 04:50:54 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\Application\XAMPP\htdocs\e-commerce\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\Application\XAMPP\htdocs\e-commerce\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'root', '', 'e-commerce', 3306, '', 0)
+#1 D:\Application\XAMPP\htdocs\e-commerce\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Application\XAMPP\htdocs\e-commerce\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Application\XAMPP\htdocs\e-commerce\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 D:\Application\XAMPP\htdocs\e-commerce\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Application\XAMPP\htdocs\e-commerce\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Application\XAMPP\htdocs\e-commerce\app\Controllers\ShopController.php(55): CodeIgniter\BaseModel->findAll()
+#7 D:\Application\XAMPP\htdocs\e-commerce\system\CodeIgniter.php(933): App\Controllers\ShopController->index()
+#8 D:\Application\XAMPP\htdocs\e-commerce\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ShopController))
+#9 D:\Application\XAMPP\htdocs\e-commerce\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Application\XAMPP\htdocs\e-commerce\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\Application\XAMPP\htdocs\e-commerce\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Application\XAMPP\htdocs\e-commerce\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\Application\XAMPP\htdocs\e-commerce\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\Application\XAMPP\htdocs\e-commerce\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Application\XAMPP\htdocs\e-commerce\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Application\XAMPP\htdocs\e-commerce\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#3 D:\Application\XAMPP\htdocs\e-commerce\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Application\XAMPP\htdocs\e-commerce\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Application\XAMPP\htdocs\e-commerce\app\Controllers\ShopController.php(55): CodeIgniter\BaseModel->findAll()
+#6 D:\Application\XAMPP\htdocs\e-commerce\system\CodeIgniter.php(933): App\Controllers\ShopController->index()
+#7 D:\Application\XAMPP\htdocs\e-commerce\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ShopController))
+#8 D:\Application\XAMPP\htdocs\e-commerce\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Application\XAMPP\htdocs\e-commerce\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 D:\Application\XAMPP\htdocs\e-commerce\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\Application\XAMPP\htdocs\e-commerce\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2026-02-07 04:50:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `products`.*
+FROM `products`
+WHERE `products`.`stock` > :products.stock:
+ORDER BY `products`.`created_at` DESC
+ LIMIT 12', [...], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ShopController.php(55): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ShopController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ShopController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
